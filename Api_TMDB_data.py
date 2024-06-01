@@ -28,36 +28,36 @@ all_results = []
 
 print(f"Retrieving pages 1 to {pages_to_retrieve}")
 
-# for page in range(1, pages_to_retrieve + 1):
-#     page_url = url_template.format(page=page)
-#     data = main_request(page_url, headers=headers)
-#     if data and 'results' in data:
-#         filtered_results = [movie for movie in data['results'] if movie['original_language'] == 'en']
-#         all_results.extend(filtered_results)
-#         print(f"Data for page {page} retrieved.")
-#     else:
-#         print(f"Skipping page {page} due to missing or incorrect data.")
+for page in range(1, pages_to_retrieve + 1):
+    page_url = url_template.format(page=page)
+    data = main_request(page_url, headers=headers)
+    if data and 'results' in data:
+        filtered_results = [movie for movie in data['results'] if movie['original_language'] == 'en']
+        all_results.extend(filtered_results)
+        print(f"Data for page {page} retrieved.")
+    else:
+        print(f"Skipping page {page} due to missing or incorrect data.")
 
-# print(f"Total items retrieved: {len(all_results)}")
+print(f"Total items retrieved: {len(all_results)}")
 
-# # Save the filtered results to a CSV file
-# csv_file = ('movies_API.csv')
+# Save the filtered results to a CSV file
+csv_file = ('movies_API.csv')
 
-# with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
-#     writer = csv.writer(file)
-#     # Write the header
-#     writer.writerow(['title', 'release_date', 'popularity', 'vote_average', 'genre_ids'])
-#     # Write the data rows
-#     for movie in all_results:
-#         writer.writerow([
-#             movie['title'],
-#             movie['release_date'],
-#             movie['popularity'],
-#             movie['vote_average'],
-#             movie['genre_ids']
-#         ])
+with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    # Write the header
+    writer.writerow(['title', 'release_date', 'popularity', 'vote_average', 'genre_ids'])
+    # Write the data rows
+    for movie in all_results:
+        writer.writerow([
+            movie['title'],
+            movie['release_date'],
+            movie['popularity'],
+            movie['vote_average'],
+            movie['genre_ids']
+        ])
 
-# print(f"Data saved to {csv_file}")
+print(f"Data saved to {csv_file}")
 
 '''
 same must be done for this endpoint to retrieve same info for the series
