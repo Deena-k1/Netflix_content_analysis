@@ -64,38 +64,38 @@ same must be done for this endpoint to retrieve same info for the series
 https://developer.themoviedb.org/reference/tv-series-popular-list
 just double check the Keys of the response json file, is not the same
 '''
-tv_url_template= 'https://api.themoviedb.org/3/tv/popular?language=en-US&page={page}'
+# tv_url_template= 'https://api.themoviedb.org/3/tv/popular?language=en-US&page={page}'
 
-for page in range(1, pages_to_retrieve + 1):
-    page_url = tv_url_template.format(page=page)
-    data = main_request(page_url, headers=headers)
-    if data and 'results' in data:
-        filtered_results = [show for show in data['results'] if show['original_language'] == 'en']
-        all_results.extend(filtered_results)
-        print(f"Data for page {page} retrieved.")
-    else:
-        print(f"Skipping page {page} due to missing or incorrect data.")
+# for page in range(1, pages_to_retrieve + 1):
+#     page_url = tv_url_template.format(page=page)
+#     data = main_request(page_url, headers=headers)
+#     if data and 'results' in data:
+#         filtered_results = [show for show in data['results'] if show['original_language'] == 'en']
+#         all_results.extend(filtered_results)
+#         print(f"Data for page {page} retrieved.")
+#     else:
+#         print(f"Skipping page {page} due to missing or incorrect data.")
 
-print(f"Total items retrieved: {len(all_results)}")
+# print(f"Total items retrieved: {len(all_results)}")
 
-# Save the filtered results to a CSV file
-csv_file2 = ('tvshows_API.csv')
+# # Save the filtered results to a CSV file
+# csv_file2 = ('tvshows_API.csv')
 
-with open(csv_file2, mode='w', newline='', encoding='utf-8') as file:
-    writer = csv.writer(file)
-    # Write the header
-    writer.writerow(['original_name', 'first_air_date', 'popularity', 'vote_average', 'genre_ids'])
-    # Write the data rows
-    for show in all_results:
-        writer.writerow([
-            show['original_name'],
-            show['first_air_date'],
-            show['popularity'],
-            show['vote_average'],
-            show['genre_ids']
-        ])
+# with open(csv_file2, mode='w', newline='', encoding='utf-8') as file:
+#     writer = csv.writer(file)
+#     # Write the header
+#     writer.writerow(['original_name', 'first_air_date', 'popularity', 'vote_average', 'genre_ids'])
+#     # Write the data rows
+#     for show in all_results:
+#         writer.writerow([
+#             show['original_name'],
+#             show['first_air_date'],
+#             show['popularity'],
+#             show['vote_average'],
+#             show['genre_ids']
+#         ])
 
-print(f"TV Shows Data saved to {csv_file2}")
+# print(f"TV Shows Data saved to {csv_file2}")
 '''
 We need and endpoint with the watching time hopefully if that info is anywhere?
 '''
