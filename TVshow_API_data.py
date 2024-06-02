@@ -60,4 +60,22 @@ with open(csv_file2, mode='w', newline='', encoding='utf-8') as file:
 
 print(f"TV Shows Data saved to {csv_file2}")
 
-
+def get_tv_genres():
+    url = "https://api.themoviedb.org/3/genre/tv/list?language=en"
+    response = requests.get(url, headers=headers)
+    json_response = response.json() 
+    
+    # save to csv file 
+    fields = ['id', 'name']
+    filename = 'tvshowgenres_API.csv'
+    with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(json_response['genres'])
+      
+    if response.status_code == 200:
+        print(f"Success: Received status code {response.status_code} for URL: {url}")
+        return response.json()
+    else:
+        print(f"Error: Received status code {response.status_code} for URL: {url}")
+        return None
