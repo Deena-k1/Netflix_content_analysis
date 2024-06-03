@@ -1,5 +1,6 @@
 import requests
 import csv
+import matplotlib.pyplot as plt
 
 BASE_URL = "https://api.themoviedb.org/3"
 BEARER_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NTUxMGM5YjdkMzZmZjEwMDJmZjY3MDQ5MjEwZTJmYiIsInN1YiI6IjY2NTc2NTg0YTUwNjc0NzdiODIxNWNjMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jcqL8pWXeu4BhOSgE8TgtsqeNsFHHvIjpB4YMZMHvE8"
@@ -66,6 +67,28 @@ def save_to_csv(movies, filename='movies.csv'):
                 'genre_names': ', '.join(movie['genre_names'])
             })
 
+def create_genre_graph(movies):
+    genre_count = {}
+
+    for movie in movies:
+        for genre in movie['genre_names']:
+            if genre in genre_count:
+                genre_count[genre] += 1
+            else:
+                genre_count[genre] = 1
+
+    genres = list(genre_count.keys())
+    counts = list(genre_count.values())
+
+    plt.figure(figsize=(10, 8))
+    plt.barh(genres, counts, color='skyblue')
+    plt.xlabel('Number of Movies')
+    plt.ylabel('Genre')
+    plt.title('Number of Movies per Genre')
+    plt.tight_layout()
+    plt.savefig('genre_distribution.png')
+    plt.show()
+
 if __name__ == '__main__':
     print("Fetching all movies...")
     all_movies = fetch_all_movies(max_pages=500)
@@ -81,3 +104,7 @@ if __name__ == '__main__':
     print("Saving movies to CSV...")
     save_to_csv(enriched_movies)
     print("Data saved to movies.csv")
+
+    print("Creating genre distribution graph...")
+    create_genre_graph(enriched_movies)
+    print("Graph saved as genre_distribution.png")
