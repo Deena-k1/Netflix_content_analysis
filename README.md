@@ -75,4 +75,4 @@ Using `git add .`/ `git add <file name>` and commit changes using `git commit -m
 <img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.add.png" width="600" height="200">
 
 Crrating a pull request on the remote repository to review changes, once changes are approved, you can merge to main branch.
-<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/github.1.png" width="400" height="300">
+<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/github.1.png" width="400" height="400">
