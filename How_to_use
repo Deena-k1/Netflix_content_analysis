@@ -1,0 +1,14 @@
+
+### Step 1: Set Up Your Environment
+
+Install Python: Ensure you have Python installed. You can download it from the official website.
+Install Required Packages: Open a terminal (or command prompt) and install the necessary Python
+packages using pip. Common packages include requests, pandas, and tmdbv3api. 
+
+### Step 2: Run the Python Codes 
+Each python file will retrieve data from the TMDB api and dave the retrieved data in a CSV file. 
+
+### Step 3: Use the CSV Data in Jupyter Notebooks
+Open Jupyter Notebook, create a new or open an existing notebook. Use pandas to load the CSV data.
+
+Alternatively, a Jupyter notebook with our analysis is included in the `Jupyter Notebook File` folder.
