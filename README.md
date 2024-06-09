@@ -42,35 +42,31 @@ Install Required Packages: Open a terminal (or command prompt) and install the n
 packages using pip. Common packages include requests, pandas, and tmdbv3api. 
 
 ### Step 2: Run the Python Codes 
+Using the TMDb API to Get Ratings, to enrich your dataset with IMDb ratings, follow these steps:
+1. **Retrieve IMDb Ratings:** Use the TMDb API to fetch ratings for each title in your dataset.
+2. **Merge Ratings with Dataset:** Merge the fetched ratings with your existing dataset based on unique identifiers (e.g., IMDb ID).
+3. **Clean and Preprocess Data:** Ensure consistency in the ratings data and handle any missing or erroneous values.
+4. **Incorporate Ratings into Analysis:** Use the IMDb ratings to enhance your analysis of user engagement and content popularity.
 Each python file will retrieve data from the TMDB api. from movies, tvsows and their respective genres and save the retrieved data in a CSV file. 
 (code to merge the csv files is in the jupyter notebook).
 
-### Step 3: Use the CSV Data in Jupyter Notebooks
-Open Jupyter Notebook, create a new or open an existing notebook. Use pandas to load the CSV data.
-
 Alternatively, a Jupyter notebook with our analysis is included in the `Jupyter Notebook File` folder.
+
 
 ### Overall Utility
 By providing targeted groups with actionable insights derived from the analysis, the project helps enhance decision-making processes, optimize content production and marketing strategies, and ultimately improve user satisfaction and retention on Netflix.
 
 ## Ethical Considerations
-this project used puplically available data set. If this project was to be given more time, we would've implemented data from other streaming services, or retrieve informed consent for more senstive data such as detailed user reports, with emphasis on keeping the data anonymised for privarcy and confidentiality of users. 
+This project used puplically available data set. If this project was to be given more time, we would've implemented data from other streaming services, or retrieve informed consent for more senstive data such as detailed user reports, with emphasis on keeping the data anonymised for privarcy and confidentiality of users. 
 
 
 ### Bias and Fairness
-- In this project, we focused exclusively on data from Netflix, which may introduce bias and limit the generalizability of our findings to other streaming platforms. This selection could skew our analysis towards trends and patterns unique to Netflix, potentially overlooking broader industry insights. To mitigate this, we aimed to maintain fairness in our analysis by transparently acknowledging this limitation and refraining from overgeneralizing our conclusions. Recognizing this platform-specific focus allowed us to address potential biases and strive for a balanced and accurate representation of the data.
+In this project, we focused exclusively on data from Netflix, which may introduce bias and limit the generalizability of our findings to other streaming platforms. This selection could skew our analysis towards trends and patterns unique to Netflix, potentially overlooking broader industry insights. To mitigate this, we aimed to maintain fairness in our analysis by transparently acknowledging this limitation and refraining from overgeneralizing our conclusions. Recognizing this platform-specific focus allowed us to address potential biases and strive for a balanced and accurate representation of the data.
 
 ## Key Data Science Methods and Theories
 In this project, we employed comprehensive data collection and cleaning techniques to ensure the integrity and usability of our datasets. We conducted Exploratory Data Analysis (EDA) and data visualization to uncover patterns and insights within the data. Our analysis included rigorous statistical analysis and hypothesis testing to validate our findings. We also implemented machine learning algorithms and predictive analytics to forecast trends and make data-driven predictions. Throughout the project, we adhered to ethical considerations in data handling to ensure privacy and compliance with data protection regulations.
 
-## How to Use TMDb API to Get Ratings
 
-To enrich your dataset with IMDb ratings, follow these steps:
-
-1. **Retrieve IMDb Ratings:** Use the TMDb API to fetch ratings for each title in your dataset.
-2. **Merge Ratings with Dataset:** Merge the fetched ratings with your existing dataset based on unique identifiers (e.g., IMDb ID).
-3. **Clean and Preprocess Data:** Ensure consistency in the ratings data and handle any missing or erroneous values.
-4. **Incorporate Ratings into Analysis:** Use the IMDb ratings to enhance your analysis of user engagement and content popularity.
 
 ## Project Management
 We imployed an agile framework to navigate this project. we organized various methods of commuication. We did a mixture of group programming/ testing, as well as working on our individual branches. In order to efficently complete out project we used three tools:
