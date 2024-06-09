@@ -7,7 +7,7 @@
 * **Deena Khan** - [GitHub profile Deena-k1](https://github.com/Deena-k1)
 * **Evelyn Rees** [GitHub profile EveRefi](https://github.com/EveRefi)
 * **Charlotte Taylor** - [GithubHub profile ctaylorsanders](https://github.com/ctaylorsanders)
-* **Dosa** - [Github profile dosa29](https://github.com/dosa29)
+* **Fardosa Mohamud** - [Github profile dosa29](https://github.com/dosa29)
 * **Kleila Gjeta** - [GitHub profile KleilaGj](https://github.com/KleilaGj)
 
 
