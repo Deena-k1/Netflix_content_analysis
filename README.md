@@ -66,7 +66,7 @@ We imployed an agile framework to navigate this project. we organized various me
 # Using Git
 
 Using the git command `git clone` followed by the HTTP link of the repository you wish to clone.
-<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.cloning.png?raw=true" width="300" height="200">
+<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.cloning.png?raw=true" width="400" height="300">
 
 Using `git branch` to check the current branch you're on. Then using `git checkout <branch name>` to switch form main to a new branch.
 <img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.branch.png" width="300" height="200">
