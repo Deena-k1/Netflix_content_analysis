@@ -33,6 +33,22 @@ Popularity refers to the degree to which a movie, TV show, or any other content 
 * [Netflix Engagment Report](https://about.netflix.com/en/news/what-we-watched-a-netflix-engagement-report)
 * [Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
+### How to use the code
+
+### Step 1: Set Up Your Environment
+
+Install Python: Ensure you have Python installed. You can download it from the official website.
+Install Required Packages: Open a terminal (or command prompt) and install the necessary Python
+packages using pip. Common packages include requests, pandas, and tmdbv3api. 
+
+### Step 2: Run the Python Codes 
+Each python file will retrieve data from the TMDB api. from movies, tvsows and their respective genres and save the retrieved data in a CSV file. 
+(code to merge the csv files is in the jupyter notebook).
+
+### Step 3: Use the CSV Data in Jupyter Notebooks
+Open Jupyter Notebook, create a new or open an existing notebook. Use pandas to load the CSV data.
+
+Alternatively, a Jupyter notebook with our analysis is included in the `Jupyter Notebook File` folder.
 
 ### Overall Utility
 By providing targeted groups with actionable insights derived from the analysis, the project helps enhance decision-making processes, optimize content production and marketing strategies, and ultimately improve user satisfaction and retention on Netflix.
