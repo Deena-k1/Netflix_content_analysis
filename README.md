@@ -14,7 +14,7 @@
 ## Project Overview
 
 In this project, our goal is to explore the factors that contribute to the popularity of Netflix content. We aim to gain insights into user preferences to inform content recommendations and strategies that enhance viewer satisfaction and engagement. By examining ratings, genres and content types, we aim to uncover user engagement patterns, preferences, and the factors contributing to the perceived quality of content on Netflix. This information can be leveraged to enhance content recommendations, improve overall viewer satisfaction, and inform future content creation strategies.
-
+   
 ## Key Metrics and Benchmarks
 
 Popularity refers to the degree to which a movie, TV show, or any other content attracts attention, interest, and engagement from a large audience over a given period. In the context of Netflix, popularity can be measured through various metrics such as the number of views, user ratings, watchtime, and the frequency of recommendations. Popularity may be influenced by:
