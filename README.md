@@ -69,10 +69,10 @@ Using the git command `git clone` followed by the HTTP link of the repository yo
 <img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.cloning.png?raw=true" width="600" height="300">
 
 Using `git branch` to check the current branch you're on. Then using `git checkout <branch name>` to switch form main to a new branch.
-<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.branch.png" width="300" height="200">
+<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.branch.png" width="600" height="200">
 
 Using `git add .`/ `git add <file name>` and commit changes using `git commit -m <message>`. then using `git push origin <branch name>`
-<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.add.png" width="300" height="200">
+<img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/git.add.png" width="600" height="200">
 
 Crrating a pull request on the remote repository to review changes, once changes are approved, you can merge to main branch.
 <img src="https://github.com/Deena-k1/Netflix_content_analysis/blob/main/docs/github.1.png" width="300" height="200">
