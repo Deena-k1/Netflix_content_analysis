@@ -8,7 +8,7 @@
 * **Evelyn Rees** [GitHub profile EveRefi](https://github.com/EveRefi)
 * **Charlotte Taylor** - [GithubHub profile ctaylorsanders](https://github.com/ctaylorsanders)
 * **Dosa** - [Github profile dosa29](https://github.com/dosa29)
-* **Leila** - [GitHub profile KleilaGj](https://github.com/KleilaGj)
+* **Kleila Gjeta** - [GitHub profile KleilaGj](https://github.com/KleilaGj)
 
 
 ## Project Overview
