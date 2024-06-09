@@ -28,10 +28,10 @@ Popularity refers to the degree to which a movie, TV show, or any other content 
 
 **Watchtime** refers to the total amount of time users spend watching a particular movie, TV show, or any other content. It includes metrics like total watchtime, average watchtime, completion rate, session duration, and peak viewing times.
 
-**Data Sources**
-[TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
-[Netflix Engagment Report](https://about.netflix.com/en/news/what-we-watched-a-netflix-engagement-report)
-[Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+**Data Sources:**
+* [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
+* [Netflix Engagment Report](https://about.netflix.com/en/news/what-we-watched-a-netflix-engagement-report)
+* [Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
 
 ### Overall Utility
